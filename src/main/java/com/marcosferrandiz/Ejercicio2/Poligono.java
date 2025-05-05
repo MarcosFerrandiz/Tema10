@@ -11,6 +11,11 @@ public class Poligono {
         this.listaPuntos = listaPuntos;
     }
 
+    /**
+     * Mueve todo el poligono en x e y
+     * @param desplX Es la cantidad de trasladar en X
+     * @param desplY Es la cantidad de trasladar en Y
+     */
     public void traslada(double desplX, double desplY){
         for (Punto punto : listaPuntos){
             punto.setX(punto.getX() + desplX);
@@ -18,10 +23,18 @@ public class Poligono {
         }
     }
 
+    /**
+     * Metodo para saber cuantos vertices tiene
+     * @return Devuelve la cantidad de vertices de la figura
+     */
     public int numVertices(){
         return listaPuntos.size();
     }
 
+    /**
+     * Metodo para calcular el perimetro
+     * @return Devuelve el perimetro
+     */
     public double perimetro(){
         Punto puntoSig;
         double perimetro=0;

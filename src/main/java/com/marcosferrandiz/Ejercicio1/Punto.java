@@ -30,6 +30,11 @@ public class Punto {
         this.y = y;
     }
 
+    /**
+     * Calcula la distancia de un punto a otro
+     * @param punto Es el punto hasta el que queremos calcular la distancia
+     * @return Devuielve la distancia entre los puntos
+     */
     public double distancia(Punto punto){
         double distx = this.x - punto.getX();
         double disty = this.y - punto.getY();

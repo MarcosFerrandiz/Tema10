@@ -15,6 +15,7 @@ public abstract class Coche {
         this.marchaAct = 0;
         this.velocidadesMarchas = new ArrayList<>(marchas);
         for (int i = 0; i < marchas ; i++) {
+            //Le he puesto 30 porque si, porque le he puesto 6 para probar y me llegaba hasta 180 creo y parecía bueno
             velocidadesMarchas.add((i + 1) *30);
         }
     }
@@ -50,6 +51,10 @@ public abstract class Coche {
         this.velocidadesMarchas = velocidadesMarchas;
     }
 
+    /**
+     * Metodo para aumentar la velocidad del vehículo, también conocido como acelerar
+     * @param velocidadAcelerar Es la cantidad de velocidad que desea acelerar
+     */
     public void acelerar(int velocidadAcelerar){
         if (velocidadAcelerar > 0){
             int nuevoVel = velAct + velocidadAcelerar;
@@ -59,6 +64,10 @@ public abstract class Coche {
         }
     }
 
+    /**
+     * Metodo para disminuir la velocidad, también conocido como frenar
+     * @param velocidadFrenar Es la cantidad que desea frenar
+     */
     public void frenar(int velocidadFrenar){
         if (velocidadFrenar > 0) {
             int nuevaVel = velAct - velocidadFrenar;
@@ -70,12 +79,20 @@ public abstract class Coche {
         }
     }
 
+    /**
+     * Metodo para cambiar de marcha
+     * @param marchaCambiar La marcha a la cual desea cambiar
+     */
     void cambiarMarcha(int marchaCambiar){
         if (marchaCambiar >= 0 && marchaCambiar < velocidadesMarchas.size()){
             marchaAct = marchaCambiar;
         }
     }
 
+    /**
+     * Booleano para saber si el coche es manual o no
+     * @return Devuelve true si es manual y false si no
+     */
     public abstract boolean esCambioManual();
 
     @Override

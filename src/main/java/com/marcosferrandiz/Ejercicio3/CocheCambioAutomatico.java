@@ -49,7 +49,7 @@ public class CocheCambioAutomatico extends Coche{
     }
 
     /**
-     * Metodo para saber si el coche es manual o automatico (es mas de ayuda que funcional)
+     * Metodo para saber si el coche es manual o automatico (es más de ayuda que funcional)
      * @return Devuelve false
      */
     @Override

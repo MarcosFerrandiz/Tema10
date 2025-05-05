@@ -4,8 +4,8 @@ public class Gestion {
     private Coche coche;
 
     /**
-     * metodo para crear un coche con una matricula validada para que sea de 7 caracteres sin espacio o 8 con espacio, en formato NNNN LLL o NNNNLLL
-     * @param matricula Es la matricula del coche que queremos crear
+     * Metodo para crear un coche con una matrícula validada para que sea de 7 caracteres sin espacio o 8 con espacio, en formato NNNN LLL o NNNNLLL
+     * @param matricula Es la matrícula del coche que queremos crear
      * @param esAutomatico Booleano para indicar si el coche es automatico o manual para que haga ciertas funciones
      */
     public void crearCoche(String matricula, boolean esAutomatico){
