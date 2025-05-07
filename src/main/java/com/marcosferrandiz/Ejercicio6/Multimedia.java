@@ -3,9 +3,9 @@ package com.marcosferrandiz.Ejercicio6;
 import java.util.Objects;
 
 public class Multimedia {
-    private String titulo;
-    private String autor;
-    private Formato formato;
+    private final String titulo;
+    private final String autor;
+    private final Formato formato;
     private int anyo;
 
     public Multimedia(String titulo, String autor, Formato formato) {
@@ -18,25 +18,16 @@ public class Multimedia {
         return titulo;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
 
     public String getAutor() {
         return autor;
     }
 
-    public void setAutor(String autor) {
-        this.autor = autor;
-    }
 
     public Formato getFormato() {
         return formato;
     }
 
-    public void setFormato(Formato formato) {
-        this.formato = formato;
-    }
 
     @Override
     public boolean equals(Object o) {
